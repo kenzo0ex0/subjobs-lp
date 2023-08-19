@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    font-weight: normal;
+    background-color: #ffff;
+    max-width: 100%;
+}
+
+.zentai {
+    text-align: center;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.last {
+    margin-bottom: 5rem;
+}
+
+.btn {
+    margin: 1.4rem 0 0.2rem 0;
+}
+
+img.btn_animate02 {
+    margin: 0 auto;
+    animation: skew 2.3s linear infinite;
+    transform-origin: center;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #3E3E3E;
+    color: #fff;
+}
+
+p {
+    margin: 0;
+    padding: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+/* skewの動きをここで設定 */
+@keyframes skew {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    5% {
+        transform: skew(2deg, 2.2deg);
+    }
+
+    10% {
+        transform: skew(-1deg, -1deg);
+    }
+
+    15% {
+        transform: skew(0.5deg, 1.2deg);
+    }
+
+    20% {
+        transform: skew(-2deg, -1.5deg);
+    }
+
+    25% {
+        transform: skew(0.9deg, 0.9deg);
+    }
+
+    30% {
+        transform: skew(-0.6deg, -0.6deg);
+    }
+
+    35% {
+        transform: skew(0.3deg, 0.3deg);
+    }
+
+    40% {
+        transform: skew(-0.2deg, -0.2deg);
+    }
+
+    45% {
+        transform: skew(0.1deg, 0.1deg);
+    }
+
+    50% {
+        transform: skew(0deg, 0deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    img {
+        width: 100vw;
+    }
+
+    .btn img {
+        width: 90%;
+    }
+}
